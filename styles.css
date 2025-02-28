@@ -1,9 +1,10 @@
 /*   */
+margin:0;
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color:#ffffff ;
-    margin:0;  
-    padding:0;
     text-align: center;
     
 }
@@ -19,20 +20,36 @@ body{
  }
 
 /* search bar */
+.search-bar{
+    width:250px;
+   height: 35px;
+    padding:5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    display: flex;
+  align-items: center;
+   
+}
 .search-bar input{
-padding:10px;
-border: 1px solid black;
-border-radius:20px;
-width:200px;
+padding:5px;
+outline:none;
+width:100%;
+border: none;
+  outline: none;
+  font-size:16px;
+
 
 }
 /* navigation */
 
 nav{
     display:flex;
-    justify-content: center;
-    gap:20px;
-    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px;
+    max-width:1200px;
+    margin:auto;
 
 }
 
@@ -52,7 +69,31 @@ button:hover{
     color:black;
     
 }
+/* scrolling image container and wrapper */
+.image-container{
+    width:80%;
+    overflow-x:auto;
+    white-space: nowrap;
+    padding:10px 0;
+    align-items:center;
+    justify-content: center;
+}
 
+.image-scroll-wrapper {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 5px;
+    /* stopping the wrapper streching on large screen */
+    max-width: 80vw;
+}
+
+/* image within the scroll wrapper  */
+.image-scroll-wrapper img{
+    height:500px;
+    border-radius:5px;
+
+}
 
 /* footer */
 
