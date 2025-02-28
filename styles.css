@@ -64,3 +64,15 @@ footer{
    padding:20px;
    margin-top:40px;
 }
+
+.instagram-icon img {
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon img:hover {
+    transform: scale(1.1);
+
+}
