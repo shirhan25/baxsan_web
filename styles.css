@@ -4,15 +4,38 @@ body{
     background-color:#ffffff ;
     margin:0;  
     padding:0;
+    text-align: center;
     
 }
 
 /* header */
-header{
-    border-color: black;
+ header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+
+  
+ }
+
+/* search bar */
+.search-bar input{
+padding:10px;
+border: 1px solid black;
+border-radius:20px;
+width:200px;
+
+}
+/* navigation */
+
+nav{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    padding:20px;
+
 }
 
-/* navigation */
 button{
 background-color:#843cfb;
 color:#ffffff;
@@ -34,5 +57,10 @@ button:hover{
 /* footer */
 
 footer{
-    background-color: ;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color:#bc64f4;
+   padding:20px;
+   margin-top:40px;
 }
