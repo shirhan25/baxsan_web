@@ -71,29 +71,54 @@ button:hover{
 }
 /* scrolling image container and wrapper */
 .image-container{
-    width:80%;
-    overflow-x:auto;
-    white-space: nowrap;
-    padding:10px 0;
+    width:100%;
+    padding:0 20px;
+    display:flex;
     align-items:center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .image-scroll-wrapper {
     display:flex;
     align-items:center;
     justify-content: center;
+
+    position: relative;
     gap: 5px;
+    width:100%;
     /* stopping the wrapper streching on large screen */
-    max-width: 80vw;
+    max-width: 1200px;
+    padding-bottom: 5px;
+/* scrolling */
+/* horizontal scrolling  */
+overflow-x: auto;
+scrollbar-width:thin;
+scrollbar-color: #843cfb transparent
 }
+
+.image-scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.image-scroll-wrapper::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.image-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #843cfb; 
+    border-radius: 4px; 
+}
+
 
 /* image within the scroll wrapper  */
 .image-scroll-wrapper img{
     height:500px;
     border-radius:5px;
-
+    flex-shrink: 0;
 }
+
+
+
 
 /* footer */
 
