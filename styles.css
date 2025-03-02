@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    position: relative;
     margin: -50px;
 }
 
@@ -35,36 +35,61 @@ body {
 
 
 
-/* search bar
-.search-bar {
-    width: 250px;
-    height: 35px;
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-size: 15px;
+/* search bar */
+.searchbar-container {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right:10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 290px;
+    min-width:200px;
 
 }
 
-.search-bar input {
+.searchbar-container input {
     padding: 5px;
-    outline: none;
-    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
     border: none;
     outline: none;
-    font-size: 16px;
+    /* min-width: 100px; */
 
+}
 
-} */
+.searchbar-container button {
+    padding: 0;
+    background: #f47cfb;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.searchbar-container button img {
+    width: 40px;
+    height: 40px;
+    object-fit:contain;
+
+}
 
 /* navigation */
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap:120px;
     padding-bottom: 15px;
     max-width: 1200px;
     margin: auto;
@@ -78,7 +103,7 @@ button {
     cursor: pointer;
     border: 2px solid black;
     border-radius: 8px;
-    padding: 12px 24px;
+    padding: 12px 10px;
     min-width: 140px;
 }
 
@@ -147,14 +172,26 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #bc64f4;
+    background-color: purple;
     padding: 20px;
     margin-top: 40px;
+    width:100%;
+}
+
+.footer-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:baseline;
 }
 
 .instagram-icon img {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
