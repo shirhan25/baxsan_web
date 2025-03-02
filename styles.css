@@ -1,119 +1,140 @@
-/*   */
-margin:0;
-
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#ffffff ;
-    text-align: center;
-    
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: -50px;
 }
 
-/* header */
- header{
-    display:flex;
-    justify-content: space-between;
+.logo-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding:20px;
+    max-width: 300px;
+}
 
-  
- }
+.logo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+}
 
-/* search bar */
-.search-bar{
-    width:250px;
-   height: 35px;
-    padding:5px 10px;
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* search bar
+.search-bar {
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
     border: 1px solid black;
     border-radius: 20px;
     font-size: 15px;
     display: flex;
-  align-items: center;
-   
-}
-.search-bar input{
-padding:5px;
-outline:none;
-width:100%;
-border: none;
-  outline: none;
-  font-size:16px;
-
+    align-items: center;
 
 }
+
+.search-bar input {
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+
+} */
+
 /* navigation */
 
-nav{
-    display:flex;
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:40px;
-    max-width:1200px;
-    margin:auto;
+    padding-bottom: 15px;
+    max-width: 1200px;
+    margin: auto;
 
 }
 
-button{
-background-color:#843cfb;
-color:#ffffff;
-font-size: 16px;
-cursor:pointer;
-border: 2px solid black;
-border-radius: 20px;
-padding: 10px 20px; 
+button {
+    background-color: #843cfb;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 12px 24px;
+    min-width: 140px;
 }
 
 /* hoovering over the button colour change  */
-button:hover{
+button:hover {
     background-color: #f47cfb;
-    color:black;
-    
+    color: black;
+
 }
+
 /* scrolling image container and wrapper */
-.image-container{
-    width:100%;
-    padding:0 20px;
-    display:flex;
-    align-items:center;
+.image-container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     box-sizing: border-box;
 }
 
 .image-scroll-wrapper {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 
     position: relative;
     gap: 5px;
-    width:100%;
+    width: 100%;
     /* stopping the wrapper streching on large screen */
     max-width: 1200px;
     padding-bottom: 5px;
-/* scrolling */
-/* horizontal scrolling  */
-overflow-x: auto;
-scrollbar-width:thin;
-scrollbar-color: #843cfb transparent
+    /* scrolling */
+    /* horizontal scrolling  */
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #843cfb transparent
 }
 
 .image-scroll-wrapper::-webkit-scrollbar {
     height: 8px;
 }
+
 .image-scroll-wrapper::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
 }
 
 .image-scroll-wrapper::-webkit-scrollbar-thumb {
-    background: #843cfb; 
-    border-radius: 4px; 
+    background: #843cfb;
+    border-radius: 4px;
 }
 
 
 /* image within the scroll wrapper  */
-.image-scroll-wrapper img{
-    height:500px;
-    border-radius:5px;
+.image-scroll-wrapper img {
+    height: 500px;
+    border-radius: 5px;
     flex-shrink: 0;
 }
 
@@ -122,19 +143,19 @@ scrollbar-color: #843cfb transparent
 
 /* footer */
 
-footer{
-   display:flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color:#bc64f4;
-   padding:20px;
-   margin-top:40px;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bc64f4;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .instagram-icon img {
-    width:40px;
-    height:40px;
-    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
