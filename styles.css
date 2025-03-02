@@ -81,6 +81,8 @@ body {
     width: 40px;
     height: 40px;
     object-fit:contain;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -186,7 +188,17 @@ footer {
 .footer-links{
     display: flex;
     justify-content: space-evenly;
-    align-items:baseline;
+  gap:80px;
+    
+}
+.footer-links a {
+text-decoration: none;
+color:black;
+}
+
+.footer-links a:hover{
+    text-decoration: none;
+    color:black;
 }
 
 .instagram-icon img {
